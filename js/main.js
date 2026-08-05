@@ -319,10 +319,10 @@ function initClickAssist() {
 
   const phoneDisplay = "+91 95662 46802";
   const phoneTel = "+919566246802";
-  const email = "millionsecurity@gmail.com";
-  const address =
-    "Thiru Vi Ka Industrial Estate, SIDCO Industrial Estate, Guindy, Chennai, Tamil Nadu 600032, India";
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  const landlineDisplay = "+91-44-31698811";
+  const landlineTel = "+914431698811";
+  const email = "visweswaran2001@yahoo.com";
+  const mapsUrl = "https://maps.app.goo.gl/9XvPoND4kaquSp547?g_st=awb";
 
   const root = document.createElement("div");
   root.className = "click-assist";
@@ -349,17 +349,24 @@ function initClickAssist() {
           </span>
         </a>
         <a class="click-assist-item" href="tel:${phoneTel}">
+          <span class="click-assist-icon is-call"><i class="bi bi-phone-fill" aria-hidden="true"></i></span>
+          <span class="click-assist-text">
+            <strong>Mobile</strong>
+            <small>${phoneDisplay}</small>
+          </span>
+        </a>
+        <a class="click-assist-item" href="tel:${landlineTel}">
           <span class="click-assist-icon is-call"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
           <span class="click-assist-text">
-            <strong>Call</strong>
-            <small>${phoneDisplay}</small>
+            <strong>Landline</strong>
+            <small>${landlineDisplay}</small>
           </span>
         </a>
         <a class="click-assist-item" href="${mapsUrl}" target="_blank" rel="noopener noreferrer">
           <span class="click-assist-icon is-map"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
           <span class="click-assist-text">
-            <strong>Address</strong>
-            <small>Guindy, Chennai 600032</small>
+            <strong>Office</strong>
+            <small>Guindy, Chennai - 600032</small>
           </span>
         </a>
       </div>
