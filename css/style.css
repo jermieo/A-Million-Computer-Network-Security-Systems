@@ -211,6 +211,18 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.navbar-brand.brand-mark .brand-logo,
+.brand-mark .brand-logo {
+  display: block;
+  height: 52px;
+  max-height: 52px;
+  width: auto;
+  max-width: min(240px, 62vw);
+  object-fit: contain;
 }
 
 .brand-mark .logo-mark {
@@ -982,6 +994,15 @@ ul {
   color: var(--white);
 }
 
+.footer-brand .brand-logo {
+  display: block;
+  height: 56px;
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  margin-bottom: 0.85rem;
+}
+
 .footer-brand strong {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -1401,9 +1422,11 @@ ul {
     --nav-h: 68px;
   }
 
-  .brand-mark .logo-mark {
-    width: 38px;
-    height: 38px;
+  .navbar-brand.brand-mark .brand-logo,
+  .brand-mark .brand-logo {
+    height: 42px;
+    max-height: 42px;
+    max-width: min(190px, 55vw);
   }
 
   .btn {
